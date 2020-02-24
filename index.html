@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<title>Happy Birthday!</title>
+
+	<style type="text/css">
+		
+		body {
+			background: rgb(254, 248, 230);
+			margin: 0;
+			overflow: hidden;
+		}
+
+		.uh {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+
+		.slideshow {
+			width: 700px;
+			text-align: center;
+			overflow: hidden;
+			position: relative;
+		}
+
+		.slides {
+			display: flex;
+			height: 700px;
+			overflow: hidden;
+			position: relative;
+		}
+
+		.slides img {
+			width: 100%;
+			position: absolute;
+		}
+
+		#slide1 {
+			animation: slide 21s ease infinite;
+		}
+
+		#slide2 {
+			animation: slide 21s ease infinite;
+			animation-delay: 7s;
+		}
+
+		#slide3 {
+			animation: slide 21s ease infinite;
+			animation-delay: 14s;
+		}
+
+		@keyframes slide {
+			0% {
+				right: 100%;
+			}
+
+			16.667% {
+				right: 0;
+			}
+
+			33.333% {
+				right: 0;
+			}
+
+			50% {
+				right: -100%;
+			}
+
+
+			100% {
+				right: -100%;
+			}
+
+		}
+
+		section {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+		}
+
+		section img {
+			width: 100px;
+		}
+		
+		.hearts {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			z-index: 12;
+		}
+
+		.hearts div {
+			position: absolute;
+			display: block;
+			transform: scale(0.2);
+		}
+
+		.hearts div:nth-child(1){
+			left: 20%;
+			animation: animateX 5s linear infinite;
+			animation-delay: -7s;
+		}
+
+		.hearts div:nth-child(2){
+			left: 50%;
+			animation: animateX 10s linear infinite;
+			animation-delay: -5s;
+		}
+
+		.hearts div:nth-child(3){
+			left: 70%;
+			animation: animateX 15s linear infinite;
+		}
+
+		.hearts div:nth-child(4){
+			left: 10%;
+			animation: animateX 5s linear infinite;
+			animation-delay: -6s;
+		}
+
+		.hearts div:nth-child(5){
+			left: 85%;
+			animation: animateX 8s linear infinite;
+			animation-delay: -10s;
+		}
+
+		.hearts div:nth-child(6){
+			left: 78%;
+			animation: animateX 12s linear infinite;
+			animation-delay: -1s;
+		}
+
+		.hearts div:nth-child(7){
+			left: 15%;
+			animation: animateX 4s linear infinite;
+		}
+
+		.hearts div:nth-child(8){
+			left: 60%;
+			animation: animateX 9s linear infinite;
+		}
+
+		@keyframes animateX {
+			0% {
+				top: -10%;
+				opacity: 0;
+			}
+
+			10% {
+				opacity: 1;
+			}
+
+
+			100% {
+				top: 110%;
+			}
+		}
+
+		.hearts2 {
+			transform: translateX(5%) translateY(10%) scale(2);
+		}
+
+	</style>
+
+</head>
+
+<body>
+
+	<div class="uh">
+
+		<div class="slideshow">
+
+			<div class="slides">
+
+				<img src="images/birthday_o3.png" class="slide" id="slide3">
+
+				<img src="images/birthday_o2.png" class="slide" id="slide2">
+
+				<img src="images/birthday_o.png" class="slide" id="slide1">
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<section>
+		<div class="hearts">
+			<div><img src="images/yellow_h.png"></div>
+			<div><img src="images/yellow_h.png"></div>
+			<div><img src="images/yellow_h.png"></div>
+			<div><img src="images/yellow_h.png"></div>
+			<div><img src="images/yellow_h.png"></div>
+			<div><img src="images/yellow_h.png"></div>
+			<div><img src="images/yellow_h.png"></div>
+			<div><img src="images/yellow_h.png"></div>
+		</div>
+		<div class="hearts hearts2">
+			<div><img src="images/yellow_h.png"></div>
+			<div><img src="images/yellow_h.png"></div>
+			<div><img src="images/yellow_h.png"></div>
+			<div><img src="images/yellow_h.png"></div>
+			<div><img src="images/yellow_h.png"></div>
+			<div><img src="images/yellow_h.png"></div>
+			<div><img src="images/yellow_h.png"></div>
+			<div><img src="images/yellow_h.png"></div>
+		</div>
+	</section>
+
+</body>
+
+</html>
